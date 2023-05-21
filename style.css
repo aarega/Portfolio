@@ -1,0 +1,92 @@
+/* Navbar */
+.navbar {
+  margin-bottom: 30px;
+}
+
+.navbar-nav li a {
+  color: blue;
+  font-size: 18px;
+  font-family: "Helvetica Neue", sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url(jumbotron-bg.jpg);
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  color: #05199eef;
+  text-align: left;
+}
+
+.jumbotron img {
+  width: 275px;
+  height: 275px;
+}
+
+/* About section */
+#about {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: black;
+  text-align: justify;
+}
+
+/* Projects section */
+#projects {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  margin-bottom: 0;
+}
+
+.card-text {
+  margin-bottom: 20px;
+}
+@media print {
+  /* Hide navbar and jumbotron when printed */
+  .navbar,
+  .jumbotron {
+    display: none;
+  }
+
+  /* Show page title when printed */
+  h1 {
+    display: block;
+  }
+
+  /* Adjust font size and margins for printed text */
+  body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Adjust margins for printed sections */
+  #about,
+  #projects,
+  #contact {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  /* Adjust margins for printed cards */
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
