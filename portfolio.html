@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-blue bg-blue">
@@ -70,8 +71,6 @@
          </div>
       </div>
     </div>
-
-
     <div id="about" class="container">
       <h2>About Me</h2>
       <p class="lead">A web developer with Strong background in developing responsive 
@@ -160,4 +159,5 @@
               <a href="#" class="btn btn-primary">View Project</a>
             </div>
           </div>
+          <button onclick="printPDF()">Print as PDF</button>
         </body>
